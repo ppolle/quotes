@@ -1,7 +1,12 @@
 <h5 class="card-title">Here are all quotes</h5>
     <div class="card-text">
     	<ul class="list-group">
-			<li class="list-group-item" *ngFor = 'let quote of quotes'>{{quote.name}}</li>
+    		<div *ngFor = 'let quote of quotes'>
 			
+			<a href="#" class="list-group-item list-group-item-action">{{quote.quote}}</a>
+			<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+
+			<app-quote-details [quote] = 'quote'></app-quote-details>
+			</div>
 		</ul>
     </div>
