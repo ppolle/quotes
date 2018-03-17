@@ -1,19 +1,32 @@
 <h5 class="card-title">Use the form below to add a new quote</h5>
     <form class="card-text" #goalForm='ngForm'>
     	<div class="form-group">
-	    	<label for="quote">Quote</label>
-	    	<input class="form-control" type="text" placeholder="Quote"[(ngModel)]="newQuote.quote" name="quote">
+	    	<label for="name">Your Name</label>
+	    	<input class="form-control" type="text" placeholder="Your Name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
+
+	    	<div [hidden] = "name.valid || name.pristine" class="alert alert-danger">
+	    		<p> The Name is Required</p>
+	    	</div>
+
+	   	</div>
+
+	   	<div class="form-group">
+	    	<label for="quoteAuthor">Quote Author</label>
+	    	<input class="form-control" type="text" placeholder="Quote Author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+
+	    	<div [hidden] = "author.valid ||author.pristine" class="alert alert-danger">
+	    		<p> The Author is Required</p>
+	    	</div>
 	    </div>
 
-	    <div class="form-group">
-	    	<label for="quoteAuthor">Quote Author</label>
-	    	<input class="form-control" type="text" placeholder="Quote Author" [(ngModel)]="newQuote.author" name="author">
+    	<div class="form-group">
+	    	<label for="quote">Quote</label>
+	    	<textarea rows="4" class="form-control" type="text" placeholder="Quote"[(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required></textarea>
+	    	<div [hidden] = "quote.valid || quote.pristine" class="alert alert-danger">
+	    		<p> The Quote is Required</p>
+	    	</div>
 	    </div>
-	    <div class="form-group">
-	    	<label for="name">Your Name</label>
-	    	<input class="form-control" type="text" placeholder="Your Name" [(ngModel)]="newQuote.name" name="name">
-	    	
-    	</div>
+	        
     	<div class="form-group">
     		<a href="#" class="btn btn-success btn-block">Add Quote</a>
     	</div>
