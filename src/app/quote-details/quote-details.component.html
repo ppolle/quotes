@@ -1,10 +1,23 @@
 
-<div class="row">
-	<div class="col-md-8">
-		<p>Author:<br>{{quote.author}}</p>
-		<p>Name:<br>{{quote.name}}</p>
-	</div>
-	<div class="col-md-4">
-		
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<p>Author:<br>{{quote.author}}</p>
+			<p>Name:<br>{{quote.name}}</p>
+		</div>
+		<div class="col-md-4">
+			<div class="row">
+				
+				<div class="col-md-6"><i class="fas fa-thumbs-up"></i> (0)</div>
+				<div class="col-md-6"><i class="fas fa-thumbs-down"></i> (0)</div>
+
+			</div>
+			<div class="row">
+				<p class="col-md-12">
+				<button class="btn btn-danger btn-block" (click) = 'goalComplete(true)'> Delete Quote</button>
+				</p>
+			</div>
+			
+		</div>
 	</div>
 </div>

@@ -4,8 +4,6 @@
     		<div *ngFor = 'let quote of quotes'>
 			
 			<a href="#" class="list-group-item list-group-item-action">{{quote.quote}}</a>
-			<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-
 			<app-quote-details [quote] = 'quote'></app-quote-details>
 			</div>
 		</ul>
