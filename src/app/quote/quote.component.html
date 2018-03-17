@@ -4,7 +4,7 @@
     		<div *ngFor = 'let quote of quotes'>
 			
 			<a href="#" class="list-group-item list-group-item-action">{{quote.quote}}</a>
-			<app-quote-details [quote] = 'quote'></app-quote-details>
+			<app-quote-details [quote] = 'quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
 			</div>
 		</ul>
     </div>
