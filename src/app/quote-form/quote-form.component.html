@@ -1,5 +1,5 @@
 <h5 class="card-title">Use the form below to add a new quote</h5>
-    <form class="card-text" #goalForm='ngForm'>
+    <form class="card-text" (ngSubmit)='submitQuote()' #goalForm='ngForm'>
     	<div class="form-group">
 	    	<label for="name">Your Name</label>
 	    	<input class="form-control" type="text" placeholder="Your Name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
