@@ -29,6 +29,10 @@
       }
     }
   ],
+  "styles": [
+    "styles.css",
+    "../node_modules/font-awesome/css/font-awesome.css"
+],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"

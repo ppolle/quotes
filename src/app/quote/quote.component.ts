@@ -15,12 +15,11 @@ export class QuoteComponent implements OnInit {
   new Quote(4,'Victory goes to the player who makes the next-to-last mistake','Mahdy Twalib','Chessmaster Savielly Grigorievitch Tartakower'),
   ]
 
-deleteQuote(isComplete,index){
-
+completeGoal(isComplete,index){
         if (isComplete){
             this.quotes.splice(index,1);
             }
-        }
+            }
 
   constructor() {
   	
