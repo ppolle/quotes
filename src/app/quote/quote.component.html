@@ -1,10 +1,33 @@
-<h5 class="card-title">Here are all quotes</h5>
-    <div class="card-text">
-    	<ul class="list-group">
-    		<div *ngFor = 'let quote of quotes'>
-			
-			<a href="#" class="list-group-item list-group-item-action">{{quote.quote}}</a>
-			<app-quote-details [quote] = 'quote' (isComplete)= 'completeGoal($event,i)'></app-quote-details>
-			</div>
-		</ul>
+<div class="container">
+<div class="card">
+  <div class="card-header">
+    Angular Quote Application
+  </div>
+  <div class="card-body">
+    
+    
+   
+    <div class="row">
+    	<div class="col-md-5">
+    		<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    	</div>
+    	
+    	<div class="col-md-7">
+
+          <h5 class="card-title">Here are all quotes</h5>
+          <div class="card-text">
+            <ul class="list-group">
+              <div *ngFor = 'let quote of quotes'>
+            
+            <a href="#" class="list-group-item list-group-item-action">{{quote.quote}}</a>
+            <app-quote-details [quote] = 'quote' (isComplete)= 'completeGoal($event,i)'></app-quote-details>
+            </div>
+          </ul>
+          </div>
+    		
+    		
+    	</div>
     </div>
+  </div>
+</div>
+</div>
