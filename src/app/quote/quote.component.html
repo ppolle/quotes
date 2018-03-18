@@ -19,7 +19,10 @@
             <ul class="list-group">
               <div *ngFor = 'let quote of quotes;let i = index'>
             
-                <a href="#" class="list-group-item list-group-item-action" (click)='toogleDetails(i)'>{{quote.quote}}</a>
+                <a href="#" class="list-group-item list-group-item-action" (click)='toogleDetails(i)'>{{quote.quote}}
+                <p>This quote was created on: {{quote.dateCreated |date}} </p>
+                </a>
+                
 
                 <app-quote-details *ngIf="quote.showDetails" [quote] = 'quote' (isDelete)= 'deleteQuote($event,i)'></app-quote-details>
               </div>
