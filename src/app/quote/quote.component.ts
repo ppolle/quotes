@@ -15,15 +15,23 @@ export class QuoteComponent implements OnInit {
   new Quote(4,'Victory goes to the player who makes the next-to-last mistake','Mahdy Twalib','Chessmaster Savielly Grigorievitch Tartakower'),
   ]
 
-  toogleDetails(index){
+toogleDetails(index){
         this.quotes[index].showDetails = !this.quotes[index].showDetails;
     }
 
-completeGoal(isComplete,index){
-        if (isComplete){
+deleteQuote(isDelete,index){
+      if (isDelete){
+
+        let toDelete=confirm(`Are you sure you want to delete the quote below?
+          
+${this.quotes[index].quote}`)
+
+
+        if (toDelete){
             this.quotes.splice(index,1);
             }
         }
+    }
 
  addNewQuote(quote){
         let quoteLength = this.quotes.length;

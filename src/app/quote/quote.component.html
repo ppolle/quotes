@@ -21,7 +21,7 @@
             
                 <a href="#" class="list-group-item list-group-item-action" (click)='toogleDetails(i)'>{{quote.quote}}</a>
 
-                <app-quote-details *ngIf="quote.showDetails" [quote] = 'quote' (isComplete)= 'completeGoal($event,i)'></app-quote-details>
+                <app-quote-details *ngIf="quote.showDetails" [quote] = 'quote' (isDelete)= 'deleteQuote($event,i)'></app-quote-details>
               </div>
             </ul>
           </div>
