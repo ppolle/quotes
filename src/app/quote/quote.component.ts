@@ -36,7 +36,7 @@ ${this.quotes[index].quote}`)
  addNewQuote(quote){
         let quoteLength = this.quotes.length;
         quote.id=quoteLength+1;
-        
+         quote.dateCreated = new Date()
         this.quotes.push(quote)
 
     }
