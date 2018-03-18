@@ -9,10 +9,10 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-  new Quote(1,'Moral indignation is jealousy with a halo','Peter Polle','H. G. Wells',new Date(2018,3,14)),
-  new Quote(2,'Glory is fleeting, but obscurity is forever','George Raburu','Napoleon Bonaparte',new Date(2018,3,14)),
-  new Quote(3,'The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts','Willis Kimani','Bertrand Russell',new Date(2018,3,14)),
-  new Quote(4,'Victory goes to the player who makes the next-to-last mistake','Mahdy Twalib','Chessmaster Savielly Grigorievitch Tartakower',new Date(2018,3,14)),
+  new Quote(1,'Moral indignation is jealousy with a halo','Peter Polle','H. G. Wells',new Date(2018,3,1)),
+  new Quote(2,'Glory is fleeting, but obscurity is forever','George Raburu','Napoleon Bonaparte',new Date(2018,3,9)),
+  new Quote(3,'The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts','Willis Kimani','Bertrand Russell',new Date(2018,1,14)),
+  new Quote(4,'Victory goes to the player who makes the next-to-last mistake','Mahdy Twalib','Chessmaster Savielly Grigorievitch Tartakower',new Date(2017,11,14)),
   ]
 
 toogleDetails(index){

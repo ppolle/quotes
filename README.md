@@ -13,7 +13,7 @@ This quote voting application is a single page application that allows users to 
 
 You need the following to start working on the project on your local computer:
 
-*A computer running on either Windows, MacOS or Ubuntu operating system installed with the following:
+* A computer running on either Windows, MacOS or Ubuntu operating system installed with the following:
 ```
 -A Web Browser
 -A text  Editor
