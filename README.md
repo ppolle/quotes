@@ -13,8 +13,8 @@ This quote voting application is a single page application that allows users to 
 
 You need the following to start working on the project on your local computer:
 
-```
 *A computer running on either Windows, MacOS or Ubuntu operating system installed with the following:
+```
 -A Web Browser
 -A text  Editor
 -Angular CLI
@@ -40,7 +40,7 @@ To get started with this project on your local computer, clone the project onto 
 
 MIT License
 
-Copyright (c) [2018] [Peter Polle]
+Copyright (c) 2018 Peter Polle
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

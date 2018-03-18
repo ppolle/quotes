@@ -1,7 +1,7 @@
 <div class="container">
 <div class="card">
   <div class="card-header">
-    Angular Quote Application
+    AANGULAR QUOTE APPLICATION
   </div>
   <div class="card-body">
     
@@ -20,7 +20,8 @@
               <div *ngFor = 'let quote of quotes;let i = index'>
             
                 <a href="#" class="list-group-item list-group-item-action" (click)='toogleDetails(i)'>{{quote.quote}}
-                <p>This quote was created {{quote.dateCreated |dateCount}} days ago</p>
+                
+                <p><small class="text-muted">This quote was created {{quote.dateCreated |dateCount}} days ago</small>
                 </a>
                 
 
