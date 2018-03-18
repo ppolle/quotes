@@ -20,7 +20,7 @@
               <div *ngFor = 'let quote of quotes;let i = index'>
             
                 <a href="#" class="list-group-item list-group-item-action" (click)='toogleDetails(i)'>{{quote.quote}}
-                <p>This quote was created on: {{quote.dateCreated |date}} </p>
+                <p>This quote was created {{quote.dateCreated |dateCount}} days ago</p>
                 </a>
                 
 
