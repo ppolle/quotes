@@ -7,6 +7,7 @@ import {Quote} from '../quote';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
+  
 
   
   @Input() quote:Quote;
@@ -17,7 +18,17 @@ export class QuoteDetailsComponent implements OnInit {
     this.isDelete.emit(complete);
   }
 
-  constructor() { }
+  likes: number;
+
+  constructor() { 
+    this.likes = 0;
+   
+  }
+
+ voteUp() :boolean {
+  this.likes += 1;
+  return false;
+}
 
   ngOnInit() {
   }

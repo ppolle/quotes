@@ -1,7 +1,7 @@
 <h5 class="card-title">Use The Form Below To Add A New Quote</h5>
     <form class="card-text" (ngSubmit)='submitQuote()' #goalForm='ngForm'>
     	<div class="form-group">
-	    	<label for="name">Your Name Please</label>
+	    	<label for="name">Quote Submitted by:</label>
 	    	<input class="form-control" type="text" placeholder="Name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
 		</div>
 		
@@ -10,7 +10,7 @@
 	    </div>
 
 	   	<div class="form-group">
-	    	<label for="quoteAuthor">Author of the Quote</label>
+	    	<label for="quoteAuthor">Quote Authored by:</label>
 	    	<input class="form-control" type="text" placeholder="Author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
 		</div>
 	    <div [hidden] = "author.valid ||author.pristine" class="alert alert-danger form-group">
