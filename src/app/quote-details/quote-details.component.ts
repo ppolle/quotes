@@ -19,9 +19,11 @@ export class QuoteDetailsComponent implements OnInit {
   }
 
   likes: number;
+  disLikes: number;
 
   constructor() { 
     this.likes = 0;
+    this.disLikes = 0;
    
   }
 
@@ -29,6 +31,11 @@ export class QuoteDetailsComponent implements OnInit {
   this.likes += 1;
   return false;
 }
+
+  voteDown() :boolean {
+    this.disLikes += 1;
+    return false;
+  }
 
   ngOnInit() {
   }
